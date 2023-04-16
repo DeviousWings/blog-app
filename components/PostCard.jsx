@@ -3,7 +3,6 @@ import moment from 'moment';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { grpahCMSImageLoader } from '../util';
 
 
 const PostCard = ({ post }) => {
@@ -16,7 +15,6 @@ const PostCard = ({ post }) => {
        */}
           <Image
             unoptimized
-            loader={grpahCMSImageLoader}
             alt={post.title}
             className="shadow-lg rounded-t-lg lg:rounded-lg"
             layout="fill"
