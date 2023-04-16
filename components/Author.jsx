@@ -13,6 +13,7 @@ const Author = ({ author }) => {
         <Image
           alt={author.name}
           unoptimized
+          loader={grpahCMSImageLoader}
           height={100}
           width={100}
           className='imageContainer rounded-full'

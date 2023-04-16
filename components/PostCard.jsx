@@ -1,6 +1,10 @@
 import React from 'react';
 import moment from 'moment';
 import Link from 'next/link';
+import Image from 'next/image';
+
+import { grpahCMSImageLoader } from '../util';
+
 
 const PostCard = ({ post }) => {
   // console.log(post);
@@ -8,7 +12,16 @@ const PostCard = ({ post }) => {
     <div className='bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8'>
 
       <div className="relative overflow-hidden shadow-md pb-80 mb-6">
-      <img src={post.featuredImage.url} alt="" className="object-top absolute h-80 w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />
+      {/* <img src={post.featuredImage.url} alt="" className="object-top absolute h-80 w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />
+       */}
+          <Image
+            unoptimized
+            loader={grpahCMSImageLoader}
+            alt={post.title}
+            className="shadow-lg rounded-t-lg lg:rounded-lg"
+            layout="fill"
+            src={post.featuredImage.url}
+          />
       </div>
       <h1 className='text-black transition duration-600 text-center mb-8 cursor-pointer
       hover:text-red-800 text-3xl font-semibold
