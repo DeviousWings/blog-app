@@ -3,6 +3,7 @@ import { Layout } from '../components';
 
 import 'tailwindcss/tailwind.css';
 import '../styles/globals.scss';
+import '../styles/author.scss';
 
 function App({ Component, pageProps }) {
   return (

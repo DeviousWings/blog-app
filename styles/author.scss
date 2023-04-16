@@ -1,0 +1,23 @@
+$ashGray: #A9BEB7;
+
+
+.authorBox {
+    height: auto;
+    display: flex; /* set the display property to flex */
+    flex-direction: column;  /* stack child elements vertically */
+    align-items: center;   /* center child elements horizontally */
+    justify-content: center;/* center child elements vertically */
+    background-color: rgb(169, 190, 183, .7);
+    color: black;
+    text-align: center;
+
+}
+
+.container {
+    display: flex;
+    /* set the display property to flex */
+    align-items: center;
+    /* center child elements horizontally */
+    justify-content: center;
+    /* center child elements vertically */
+}
