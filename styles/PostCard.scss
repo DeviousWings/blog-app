@@ -1,0 +1,119 @@
+.card-container {
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem; /* 8px */;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+
+    .fetured-image-box {
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        padding-bottom: 25rem;
+        margin-bottom: 1.5rem; /* 24px */
+
+    }
+    .fea-image {
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        border-top-left-radius: 0.5rem; /* 8px */
+        border-top-right-radius: 0.5rem; /* 8px */
+        
+    }
+    
+
+    .title {
+        color: black;
+        transition: color 2s ease-out;
+        transition-duration: 600ms;
+        text-align: center;
+        margin-bottom: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 40px;
+        
+            &:hover {
+                color: rgb(148, 3, 3);
+                cursor: pointer;
+        
+            }
+    }
+
+    .auther-box {
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        width: 100%;
+
+        .a-cont {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 4px;
+
+            img {
+                vertical-align: middle;
+                border-radius: 9999px;
+            }
+
+
+            p {
+                display: inline;
+                vertical-align: middle;
+                color: rgb(71, 71, 71);
+                margin-left: 8px;
+                font-size: 1.125rem; /* 18px */
+                line-height: 1.75rem; /* 28px */
+            }
+        }
+
+        .a-date {
+            font-weight: 500;
+            color:rgb(71, 71, 71);
+
+            svg {
+                height: 20px;
+                width: 20px;
+                display: inline;
+                margin-right: 10px;
+                color: blue;
+            }
+        }
+
+    }
+
+    //Post exerpt
+    .post-exerpt {
+        text-align: center;
+        font-size: 1.125rem; /* 18px */
+        line-height: 1.75rem; /* 28px */
+        color: rgb(55, 65, 81);
+        font-weight: 400;
+        padding-left: 1rem; /* 16px */
+        padding-right: 1rem; /* 16px */
+        margin-bottom: 15px;
+    }
+
+    // Button: Continue Reading
+    .button {
+        display: inline-block;
+        background-color: blue;
+        color: white;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 500ms;
+        font-weight: 500;
+        border-radius: 9999px;
+        padding-top: 0.75rem; /* 12px */
+        padding-bottom: 0.75rem; /* 12px */
+        padding-left: 2rem; /* 32px */
+        padding-right: 2rem; /* 32px */
+        
+        &:hover {
+            // transform: translateX(0.25rem);
+            transform: translateY(0.25rem);
+            background-color: rgb(170, 1, 1);
+        }
+    }
+
+}

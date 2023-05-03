@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { PostCard, Categories, PostWidget } from '../components';
+import { PostCard, Categories, PostWidget, AllPosts } from '../components';
 import { getPosts } from '../services'
 
 
@@ -10,6 +10,7 @@ export default function Home({ posts }) {
         <Head>
           <title>Bottega Blog app</title>
         </Head>
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className='lg:col-span-8 col-span-1'>
             {posts.map((post) => <PostCard post={post.node} key={post.title} />)}

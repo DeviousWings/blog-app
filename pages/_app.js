@@ -3,7 +3,7 @@ import { Layout } from '../components';
 
 import 'tailwindcss/tailwind.css';
 import '../styles/globals.scss';
-import '../styles/author.scss';
+import '../styles/main.scss';
 
 function App({ Component, pageProps }) {
   return (
@@ -15,3 +15,4 @@ function App({ Component, pageProps }) {
 
 export default App
 
+// This is your bootstrap
